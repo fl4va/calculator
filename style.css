@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+*{
+  font-family: Poppins;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  background: linear-gradient( to bottom, rgba(223, 76, 215, 0.603), rgb(73, 83, 226));
+  height: 604px;
+}
+
+h1 {
+  text-shadow: 2px 2px 2px rgb(221, 56, 83);
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 7px;
+  flex-direction: column;
+  background-color: rgb(221, 56, 83);
+  width: 220px;
+  height: 400px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  color: white;
+  align-items: center;
+  height: 25px;
+  font-family: Roboto Mono;
+}
+
+#header img {
+  display: flex;
+  max-width: 30px;
+  border-bottom: 1px solid white;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+
+.operation {
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.input {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+  gap: 2px;
+  height: 200px;
+}
+
+button {
+  border: 1px solid red;
+  background-color: rgb(146, 56, 71);
+  border-radius: 30%;
+  justify-content: center;
+  align-items: center;
+}
