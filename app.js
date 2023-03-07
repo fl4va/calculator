@@ -65,27 +65,24 @@ function operate (operator, ...nums) {
 window.addEventListener('keydown', function(e){
     
     if (e.key === '.') noqta.click() 
-    if (e.key === 'backspace') deleteBtn.click()
-    if (e.key === 'enter') equal.click()
+    if (e.key === 'Backspace') deleteBtn.click()
     if (e.key === 'o') positive_negative.click()
     if (e.key === '%') percentage.click()
     if (e.key === 'c' || e.key === 'Escape') clear.click()
 
-    if (e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/' ) { 
-        operator.forEach(e => {
-            if (e.key === e.textContent) {
-                e.click()
-            }
-        })
-    }
+    // if (e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/' ) { 
+    //     operate.forEach(e => {
+    //         e.key
+    //     })
+    // }
 
-    if (e.key >= '0' && e.key <= '9') {
-        num.forEach(e => {
-            if (e.textContent === e.key) {
-                e.click()
-            }
-        })
-    }
+//     if (e.key >= '0' && e.key <= '9') {
+//         num.forEach(e => {
+//             if (e.textContent === e.key) {
+//                 e.click()
+//             }
+//         })
+//     }
 });
 
 num.forEach((e) => {
